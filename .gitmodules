@@ -1,0 +1,6 @@
+[submodule "backend"]
+	path = backend
+	url = https://github.com/Grupo8-GPTI-2025-1/backend.git
+[submodule "scraping-tool"]
+	path = scraping-tool
+	url = https://github.com/Grupo8-GPTI-2025-1/scraping-tool.git

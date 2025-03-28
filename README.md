@@ -1,2 +1,22 @@
 # property-broker
 Property broker es una herramienta que te permite buscar de manera eficiente sobre el [portal inmobiliario](https://www.portalinmobiliario.com/) para encontrar oportunidades de negocio.
+
+Este repositorio se utiliza para levantar el proyecto completo (utilizando git submodules) pero no debe ser usado para implementar cambios a un repo específico.
+
+### Clonar repositorio
+
+```
+git clone --recurse-submodules https://github.com/Grupo8-GPTI-2025-1/property-broker.git
+```
+
+### Actualizar repositorios
+
+```
+git submodule update --remote
+```
+
+### Levantar contenedores
+
+```
+docker-compose up --build
+```
