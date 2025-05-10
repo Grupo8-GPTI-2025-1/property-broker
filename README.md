@@ -20,3 +20,13 @@ git submodule update --remote
 ```
 docker-compose up --build
 ```
+
+### Scripts
+
+Para levantar `db` de manera independiente
+
+```
+ docker-compose up db
+```
+
+(Notar que para crear las tablas es necesario levantar el backend primero)
