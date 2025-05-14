@@ -6,7 +6,7 @@ services:
     depends_on:
       - backend
     volumes:
-      - ./frontend:/app
+      - ./frontend:/property-broker-frontend/app
       - /app/node_modules
     environment:
       - API_URL=http://backend:4000
@@ -30,6 +30,7 @@ services:
   #     - ./scraper:/app
   #   environment:
   #     - DATABASE_URL=postgres://user:password@db:5432/mydb
+
 
   db:
     image: postgres:15
