@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   frontend:
-    build: ./frontend
+    build: ./frontend/property-broker-frontend
     ports:
       - "3000:3000"
     depends_on:
@@ -10,6 +10,8 @@ services:
     volumes:
       - ./frontend:/app
       - /app/node_modules
+    environment:
+    - API_URL=http://backend:4000
   
   backend:
     build: ./backend
@@ -23,11 +25,11 @@ services:
       - DATABASE_URL=postgres://user:password@db:5432/mydb
 
   scraper:
-    build: ./scraper
+    build: ./scraping-tool
     depends_on:
       - backend
     volumes:
-      - ./scraper:/app
+      - ./scraping-tool:/app
     environment:
       - DATABASE_URL=postgres://user:password@db:5432/mydb
 
