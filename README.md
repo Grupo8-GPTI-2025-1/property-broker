@@ -12,7 +12,7 @@ git clone --recurse-submodules https://github.com/Grupo8-GPTI-2025-1/property-br
 ### Actualizar repositorios
 
 ```
-git submodule update --remote
+git submodule update --remote --merge
 ```
 
 ### Levantar contenedores
