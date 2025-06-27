@@ -30,3 +30,13 @@ Para levantar `db` de manera independiente
 ```
 
 (Notar que para crear las tablas es necesario levantar el backend primero)
+
+### Ejecución 
+
+1. Levantar contenedores
+
+2. Setup scrapper (Más información [aquí](https://github.com/Grupo8-GPTI-2025-1/scraping-tool/tree/main))
+
+3. Scrappear páginas (Se debe tener al menos backend y db funcionando)
+
+4. Ver Applicación en `http://localhost:3000`
